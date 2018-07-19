@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  height: 83px;
+}
+header nav {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+header nav .nav-logo {
+  width: 270px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+header nav .nav-logo img {
+  width: 255px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  top: -1px;
+  left: -1px;
+}
+header nav .nav-content {
+  flex: 1;
+  height: 100%;
+  margin-right: 0px;
+}
+header nav .nav-content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+header nav .nav-content ul li {
+  list-style: none;
+  width: 74px;
+  text-align: center;
+  margin: 0 21px;
+}
+header nav .nav-content ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 85px;
+  color: black;
+}
+header nav .nav-content ul .nav-active {
+  border-bottom: 4px solid #FDA618;
+}
+header nav .nav-content ul .nav-active a {
+  color: #FDA618;
+  font-size: 18px;
+}
+header .banner {
+  width: 100%;
+  height: 570px;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% 100%;
+  margin-top: 1px;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background: #2C2D32;
+}
+footer .f-content {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+footer .f-content .fc-left {
+  width: 410px;
+  height: 185px;
+}
