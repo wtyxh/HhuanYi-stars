@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+header {
+    width: 100%;
+    height: auto;
+    //  导航
+    nav {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        .nav-logo {
+            width: 270px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            img {
+                width: 255px;
+                height: auto;
+                margin: 0 auto;
+                position: relative;
+                top: -1px;
+                left: -1px;
+            }
+        }
+        .nav-content {
+            flex: 1;
+            height: 100%;
+            margin-right: 0px;
+            ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-end;
+                li {
+                    list-style: none;
+                    width: 74px;
+                    text-align: center;
+                    margin: 0 21px;
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                        line-height: 85px;
+                        color: black;
+                    }
+                }
+                .nav-active {
+                    border-bottom: 4px solid #FDA618;
+                    a {
+                        color: #FDA618;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    //  banner
+    .banner {
+        width: 100%;
+        height: 570px;
+        background: url(../img/banner.png)no-repeat;
+        background-size: 100% 100%;
+        margin-top: 1px;
+    }
+}
+
+//底部
+footer {
+    .footer {
+        width: 100%;
+        height: auto;
+        background: #2C2D32;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        .f-content {
+            width: 1200px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            padding: 40px 0;
+            .fc-left {
+                width: 470px;
+                height: 185px;
+                display: flex;
+                flex-flow: column;
+                justify-content: flex-start;
+                font-size: 0;
+                p {
+                    text-align: center;
+                    color: white;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 133px;
+                    height: 129px;
+                    margin: 0 auto;
+                }
+            }
+            .fc-center {
+                width: 150px;
+                height: auto;
+                text-align: center;
+                p {
+                    color: rgba(255, 255, 255, 0.5);
+                    margin: 10px 0;
+                    text-align: left;
+                    text-indent: 30px;
+                    &:first-child {
+                        font-size: 18px;
+                        margin-bottom: 17px;
+                        margin-top: 0;
+                        color: white;
+                    }
+                }
+            }
+            .fc-right {
+                flex: 1;
+                height: auto;
+                text-align: center;
+                font-size: 0;
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                .fcr-pardon {
+                    width: 260px;
+                    height: auto;
+                    p {
+                        text-align: left;
+                        color: white;
+                        font-size: 15px;
+                        text-indent: 30px;
+                        margin-bottom: 10px;
+                        &:first-child {
+                            text-indent: 0;
+                            font-size: 18px;
+                            margin-bottom: 17px;
+                        }
+                    }
+                    .fcr-item {
+                        position: relative;
+                        i {
+                            display: block;
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                        }
+                        .ficr1 {
+                            width: 17px;
+                            height: 17px;
+                            background: url(../img/footer.png)no-repeat;
+                            background-size: auto 28px;
+                            background-position: -2px -7px;
+                        }
+                        .frci2 {
+                            width: 18px;
+                            height: 18px;
+                            background: url(../img/footer.png)no-repeat;
+                            background-size: auto 28px;
+                            background-position: -23px -7px;
+                        }
+                        .frci3 {
+                            width: 17px;
+                            height: 17px;
+                            background: url(../img/footer.png)no-repeat;
+                            background-size: auto 28px;
+                            background-position: -46px -7px;
+                        }
+                        .frci4 {
+                            width: 17px;
+                            height: 17px;
+                            background: url(../img/footer.png)no-repeat;
+                            background-size: auto 28px;
+                            background-position: -68px -7px;
+                        }
+                        .frci5 {
+                            width: 17px;
+                            height: 17px;
+                            background: url(../img/footer.png)no-repeat;
+                            background-size: auto 28px;
+                            background-position: -93px -6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        padding: 20px 0;
+        background: #2C2D32;
+        p{
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255,255,255,0.8);
+            font-weight: bold;
+        }
+    }
+}

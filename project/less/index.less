@@ -1,0 +1,364 @@
+//banner内容
+.banner {
+    .b-content {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        .bc-left {
+            width: 600px;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            .bcl-title {
+                font-size: 38px;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                span {
+                    color: white;
+                    font-size: 64px;
+                }
+            }
+            .consulting {
+                display: block;
+                text-decoration: none;
+                font-size: 21px;
+                color: black;
+                padding: 10px 0px;
+                width: 235px;
+                text-align: center;
+                background: white;
+                margin: 0 auto;
+                margin-top: 40px;
+            }
+        }
+        .bc-right {
+            flex: 1;
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            .bcr-direction {
+                width: 45px;
+                height: 100%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                cursor: pointer;
+                i {
+                    width: 45px;
+                    height: 45px;
+                    background: url(../img/banner-direction.png)no-repeat;
+                    background-size: auto 45px;
+                    background-position: 0 0;
+                }
+            }
+            .bcrd-right {
+                i {
+                    width: 45px;
+                    height: 45px;
+                    background: url(../img/banner-direction.png)no-repeat;
+                    background-size: auto 45px;
+                    background-position: -45px 0;
+                }
+            }
+            .brc-img {
+                width: 350px;
+                height: 100%;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                position: relative;
+                p {
+                    font-size: 25px;
+                    width: 30px;
+                    line-height: 40px;
+                    position: absolute;
+                    top: 120px;
+                    left: 25px;
+                    color: black;
+                    font-weight: bold;
+                }
+                img {
+                    width: 310px;
+                    height: auto;
+                    border: 10px solid white;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+section {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    .s-title {
+        font-size: 30px;
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    //机构简介
+    .s-enterprise {
+        width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 65px;
+        border-bottom: 1px solid #DDDDDE;
+        .se-title {
+            width: 100%;
+            height: auto;
+            border-left: 5px solid #FDA718;
+            font-size: 0;
+            line-height: 18px;
+            p {
+                font-size: 17px;
+                font-weight: bold;
+                text-indent: 10px;
+            }
+        }
+        .se-content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .sec-left {
+                width: 630px;
+                height: auto;
+                p {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    text-indent: 30px;
+                    font-size: 13px;
+                    line-height: 25px;
+                    margin-top: 40px;
+                }
+                a {
+                    text-decoration: none;
+                    position: relative;
+                    top: 112px;
+                    left: 565px;
+                    font-size: 13px;
+                    color: #FDA718;
+                }
+                .sec-img {
+                    margin-top: 30px;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-between;
+                    img {
+                        width: 290px;
+                        height: auto;
+                    }
+                }
+            }
+            .sec-right {
+                width: 460px;
+                height: auto;
+                .secr-title {
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+                }
+                img {
+                    width: 450px;
+                    height: auto;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+    //战略合作伙伴
+    .s-strategic {
+        width: 1200px;
+        margin: 0 auto;
+        height: auto;
+        padding-bottom: 65px;
+        margin-top: 30px;
+        .ss-title {
+            width: 100%;
+            height: auto;
+            border-left: 5px solid #FDA718;
+            font-size: 0;
+            line-height: 18px;
+            p {
+                font-size: 17px;
+                font-weight: bold;
+                text-indent: 10px;
+            }
+        }
+        .ss-img {
+            margin-top: 35px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .ssi-item {
+                width: 410px;
+                height: auto;
+                &:last-child {
+                    width: 410px;
+                }
+                &:first-child {
+                    width: 300px;
+                }
+                .ssii-img {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    font-size: 0;
+                    .ssii-bounced {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        background: rgba(0, 0, 0, 0.5);
+                        transition: all 0.5s;
+                        opacity: 0;
+                        cursor: pointer;
+                        p {
+                            text-align: center;
+                            font-size: 24px;
+                            color: white;
+                        }
+                    }
+                    &:hover .ssii-bounced {
+                        display: flex;
+                        opacity: 1;
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .ssii-text {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .ss-imgt {
+            width: 100%;
+            height: auto;
+            margin-top: 0px;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .ssi-left {
+                width: 630px;
+                height: auto;
+                position: relative;
+                span {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    font-size: 14px;
+                    color: white;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .ssi-right {
+                width: 515px;
+                height: auto;
+                display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .ss-bottomT {
+            width: 100%;
+            height: auto;
+            position: relative;
+            .ss-text {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+                width: 1140px;
+                font-size: 14px;
+                margin-left: 5px;
+                line-height: 25px;
+                color: black;
+            }
+            a{
+                position: absolute;
+                top: 28px;
+                left: 1090px;
+                color: #FDA718;
+                font-size: 14px;    
+                text-decoration: none;    
+            }
+        }
+    }
+    //专业介绍
+    .s-professional{
+        width: 100%;
+        height: auto;
+        background: #F0F0F0;
+        padding: 60px 0;
+        .sp-title{
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .sp-english{
+            font-size: 20px;
+            color: #ADADAD;
+            text-align: center;
+        }
+        .sp-content{
+            width: 1200px;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            .spc-item{
+                width: 305px;
+                height: 360px;
+                background: white;
+                margin: 20px 0;
+                .spci-img{
+                    width: 100%;
+                    height: 224px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
