@@ -73,7 +73,7 @@ header .banner {
 }
 footer .footer {
   width: 100%;
-  height: auto;
+  height: 300px;
   background: #2C2D32;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }

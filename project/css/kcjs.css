@@ -1,0 +1,203 @@
+section {
+  padding: 60px 0 0 0;
+  width: 100%;
+  height: auto;
+}
+section h1 {
+  font-size: 30px;
+  text-align: center;
+}
+section .s-english {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 20px;
+  color: #B8B8B8;
+}
+section .s-professional {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+section .s-professional .sp-item {
+  width: 310px;
+  height: 480px;
+  border: 1px solid #FC8A03;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+section .s-professional .sp-item .spi-top {
+  height: 115px;
+  background: #FC8A03;
+  width: 100%;
+  line-height: 115px;
+}
+section .s-professional .sp-item .spi-top p {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+section .s-professional .sp-item .spi-double {
+  background: #EEEEEE;
+}
+section .s-professional .sp-item .spi-double p {
+  color: black;
+}
+section .s-professional .sp-item .spi-content {
+  width: 100%;
+  height: auto;
+  line-height: 22px;
+  margin-top: 10px;
+}
+section .s-professional .sp-item .spi-content p {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 14px;
+}
+section .s-professional .sp-item .spi-content .spic-title {
+  color: #FC8A03;
+}
+section .s-admissions {
+  width: 100%;
+  height: auto;
+  background: #F9F9F9;
+  padding: 100px 0;
+}
+section .s-admissions .sa-top {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-admissions .sa-top .sat-left {
+  width: 510px;
+  height: auto;
+  line-height: 40px;
+}
+section .s-admissions .sa-top .sat-left .satl-h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+section .s-admissions .sa-top .sat-left .satl-h2 {
+  font-size: 19px;
+  text-align: left;
+}
+section .s-admissions .sa-top .sat-left ul {
+  margin-left: 20px;
+  line-height: 50px;
+}
+section .s-admissions .sa-top .sat-right {
+  width: 320px;
+  height: auto;
+}
+section .s-admissions .sa-top .sat-right .satr-title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+section .s-admissions .sa-top .sat-right .satr-item {
+  width: 320px;
+  height: 45px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background: #FC8A03;
+}
+section .s-admissions .sa-top .sat-right .satr-item p {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+section .s-admissions .sa-top .sat-right i {
+  display: block;
+  width: 20px;
+  height: 25px;
+  background: url('../img/kcjs/1.png') no-repeat;
+  background-size: 100% 100%;
+  margin: 5px auto;
+}
+section .s-admissions .sa-center {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+section .s-admissions .sa-center h3 {
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+section .s-admissions .sa-center .sa-option {
+  width: 100%;
+  height: auto;
+}
+section .s-admissions .sa-center .sa-option .sao-item {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-big {
+  width: 540px;
+  height: 100%;
+  background: #EEEEEE;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-big p {
+  text-align: center;
+  font-size: 14px;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-small {
+  width: 179px;
+  height: 100%;
+  background: #EEEEEE;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-small p {
+  text-align: center;
+  font-size: 14px;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-big {
+  background: #FC8A03;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-big p {
+  color: white;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-small {
+  background: #FC8A03;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-small p {
+  color: white;
+}
+section .s-admissions .sa-join {
+  width: 100%;
+  height: auto;
+}
+section .s-admissions .sa-join p {
+  width: 140px;
+  height: 45px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #FC8A03;
+  border-radius: 50px;
+  color: #FC8A03;
+  line-height: 45px;
+  margin-top: 50px;
+  cursor: pointer;
+}

@@ -1,0 +1,171 @@
+.banner {
+  border-top: 1px solid transparent;
+}
+.banner .b-title {
+  width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 42px;
+  color: white;
+  margin-top: 145px;
+}
+.banner .b-consulting {
+  display: block;
+  text-decoration: none;
+  width: 160px;
+  height: 35px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 35px;
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+  background: white;
+}
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+}
+section h1 {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+section .s-english {
+  text-align: center;
+  color: #b4b4b4;
+}
+section .s-introduce {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ededed;
+}
+section .s-introduce .si-left {
+  width: 770px;
+  height: auto;
+  font-size: 14px;
+  color: black;
+}
+section .s-introduce .si-left p:first-child {
+  width: 770px;
+  height: 206px;
+  font-size: 14px;
+  color: black;
+  text-indent: 30px;
+  line-height: 30px;
+}
+section .s-introduce .si-left p:last-child {
+  width: 770px;
+  height: 85px;
+  font-size: 14px;
+  color: black;
+  text-indent: 30px;
+  line-height: 30px;
+  margin-top: 80px;
+}
+section .s-introduce .si-right {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+section .s-introduce .si-right img {
+  width: 335px;
+  border: 5px solid #dee2e1;
+}
+section .s-company {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+section .s-company .sc-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+}
+section .s-company .sc-introduce {
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  color: black;
+  text-indent: 30px;
+  line-height: 30px;
+}
+section .s-company .sc-img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-company .sc-img .sci-left {
+  width: 625px;
+  height: auto;
+}
+section .s-company .sc-img .sci-right {
+  width: 510px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+section .s-company .sc-img .sci-right img {
+  width: 100%;
+  height: auto;
+}
+section .s-plan {
+  font-size: 45px;
+  width: 1200px;
+  height: auto;
+  margin: 80px auto;
+  text-align: center;
+  font-weight: normal;
+}
+section .s-scene {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .s-scene .ss-item {
+  width: 570px;
+  height: auto;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0;
+}
+section .s-scene .ss-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-scene .ss-bottom .ssb-left {
+  width: 725px;
+  height: auto;
+}
+section .s-scene .ss-bottom .ssb-left img {
+  width: 100%;
+  height: auto;
+}
+section .s-scene .ss-bottom .ssb-right {
+  width: 405px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+section .s-scene .ss-bottom .ssb-right img {
+  width: 100%;
+  height: auto;
+}

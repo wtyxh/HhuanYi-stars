@@ -1,0 +1,179 @@
+.banner {
+  border-top: 1px solid transparent;
+  .b-title {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 42px;
+    color: white;
+    margin-top: 145px;
+  }
+  .b-consulting {
+    display: block;
+    text-decoration: none;
+    width: 160px;
+    height: 35px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 35px;
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    background: white;
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+  .s-english {
+    text-align: center;
+    color: #b4b4b4;
+  }
+  //关于我们下面介绍
+  .s-introduce {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #ededed;
+    //左边文字
+    .si-left {
+      width: 770px;
+      height: auto;
+      font-size: 14px;
+      color: black;
+      p {
+        &:first-child {
+          width: 770px;
+          height: 206px;
+          font-size: 14px;
+          color: black;
+          text-indent: 30px;
+          line-height: 30px;
+        }
+        &:last-child {
+          width: 770px;
+          height: 85px;
+          font-size: 14px;
+          color: black;
+          text-indent: 30px;
+          line-height: 30px;
+          margin-top: 80px;
+        }
+      }
+    }
+    //右边图片
+    .si-right {
+      flex: 1;
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-end;
+      img {
+        width: 335px;
+        border: 5px solid #dee2e1;
+      }
+    }
+  }
+  //公司介绍
+  .s-company {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    .sc-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 20px 0 10px 0;
+    }
+    .sc-introduce {
+      width: 100%;
+      height: auto;
+      font-size: 14px;
+      color: black;
+      text-indent: 30px;
+      line-height: 30px;
+    }
+    .sc-img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      .sci-left {
+        width: 625px;
+        height: auto;
+      }
+      .sci-right {
+        width: 510px;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .s-plan {
+    font-size: 45px;
+    width: 1200px;
+    height: auto;
+    margin: 80px auto;
+    text-align: center;
+    font-weight: normal;
+  }
+  //   签约现场
+  .s-scene {
+      width: 1200px;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .ss-item{
+          width: 570px;
+          height: auto;
+          font-size: 25px;
+          text-align: center;
+          margin: 10px 0;
+      }
+      .ss-bottom{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-flow: row;
+          justify-content: space-between;
+          .ssb-left{
+              width: 725px;
+              height: auto;
+              img{
+                  width: 100%;
+                  height: auto;
+              }
+          }
+          .ssb-right{
+              width: 405px;
+              display: flex;
+              flex-flow: column;
+              justify-content: space-between;
+              img{
+                  width: 100%;
+                  height: auto;
+              }
+          }
+      }
+  }
+}
