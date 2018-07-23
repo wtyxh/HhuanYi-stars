@@ -308,35 +308,35 @@ section {
                 line-height: 25px;
                 color: black;
             }
-            a{
+            a {
                 position: absolute;
                 top: 28px;
                 left: 1090px;
                 color: #FDA718;
-                font-size: 14px;    
-                text-decoration: none;    
+                font-size: 14px;
+                text-decoration: none;
             }
         }
     }
     //专业介绍
-    .s-professional{
+    .s-professional {
         width: 100%;
         height: auto;
         background: #F0F0F0;
         padding: 60px 0;
-        .sp-title{
+        .sp-title {
             font-size: 20px;
             color: black;
             text-align: center;
             font-weight: bold;
             margin-bottom: 10px;
         }
-        .sp-english{
+        .sp-english {
             font-size: 20px;
             color: #ADADAD;
             text-align: center;
         }
-        .sp-content{
+        .sp-content {
             width: 1200px;
             height: auto;
             display: flex;
@@ -344,18 +344,479 @@ section {
             justify-content: space-between;
             flex-wrap: wrap;
             margin: 0 auto;
-            .spc-item{
+            .spc-item {
                 width: 305px;
                 height: 360px;
                 background: white;
                 margin: 20px 0;
-                .spci-img{
+                display: flex;
+                flex-flow: column;
+                cursor: pointer;
+                .spci-img {
                     width: 100%;
                     height: 224px;
                     overflow: hidden;
-                    img{
+                    img {
+                        width: auto;
+                        height: 100%;
+                    }
+                }
+                .spci-text {
+                    flex: 1;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    span {
+                        display: block;
+                        width: 170px;
+                        height: 55px;
+                        margin: 0 auto;
+                        text-align: center;
+                        line-height: 55px;
+                        font-size: 27px;
+                        color: #FC8A03;
+                        border: 1px solid #FC8A03;
+                        border-radius: 50px;
+                    }
+                }
+                &:hover {
+                    .spci-text span {
+                        color: white;
+                        background: #FC8A03;
+                    }
+                }
+            }
+        }
+    }
+    //招生入学
+    .s-admissions {
+        width: 100%;
+        height: auto;
+        background: #F9F9F9;
+        padding: 100px 0;
+        .sa-top {
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            .sat-left {
+                width: 510px;
+                height: auto;
+                line-height: 40px;
+                .satl-h1 {
+                    font-size: 36px;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                .satl-h2 {
+                    font-size: 19px;
+                    text-align: left;
+                }
+                ul {
+                    margin-left: 20px;
+                    line-height: 50px;
+                }
+            }
+            .sat-right {
+                width: 320px;
+                height: auto;
+                .satr-title {
+                    font-size: 30px;
+                    text-align: center;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+                .satr-item {
+                    width: 320px;
+                    height: 45px;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    background: #FC8A03;
+                    p {
+                        text-align: center;
+                        color: white;
+                        font-size: 14px;
+                    }
+                }
+                i {
+                    display: block;
+                    width: 20px;
+                    height: 25px;
+                    background: url('../img/kcjs/1.png') no-repeat;
+                    background-size: 100% 100%;
+                    margin: 5px auto;
+                }
+            }
+        }
+        .sa-center {
+            width: 900px;
+            height: auto;
+            margin: 0 auto;
+            h3 {
+                font-size: 29px;
+                font-weight: bold;
+                text-align: center;
+                margin: 20px 0;
+            }
+            .sa-option {
+                width: 100%;
+                height: auto;
+                .sao-item {
+                    width: 100%;
+                    height: 65px;
+                    display: flex;
+                    flex-flow: row;
+                    justify-content: space-between;
+                    .saoi-big {
+                        width: 540px;
+                        height: 100%;
+                        background: #EEEEEE;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        p {
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                    .saoi-small {
+                        width: 179px;
+                        height: 100%;
+                        background: #EEEEEE;
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: center;
+                        p {
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .saoi-double {
+                    .saoi-big {
+                        background: #FC8A03;
+                        p {
+                            color: white;
+                        }
+                    }
+                    .saoi-small {
+                        background: #FC8A03;
+                        p {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .sa-join {
+            width: 100%;
+            height: auto;
+            p {
+                width: 140px;
+                height: 45px;
+                margin: 0 auto;
+                text-align: center;
+                border: 1px solid #FC8A03;
+                border-radius: 50px;
+                color: #FC8A03;
+                line-height: 45px;
+                margin-top: 50px;
+                cursor: pointer;
+            }
+        }
+    }
+    //部分师资力量
+    .s-strength {
+        width: 100%;
+        height: auto;
+        background: #ECECEC;
+        padding: 40px 0;
+        padding-bottom: 60px;
+        .ss-title {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .ss-english {
+            font-size: 20px;
+            color: #ADADAD;
+            text-align: center;
+        }
+        .ss-pardon {
+            width: 1190px;
+            height: auto;
+            margin: 30px auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                width: 240px;
+                height: 330px;
+                list-style: none;
+                display: flex;
+                flex-flow: column;
+                margin-bottom: 20px;
+                .ssp-img {
+                    width: 100%;
+                    height: 250px;
+                    overflow: hidden;
+                    img {
                         width: 100%;
                         height: auto;
+                    }
+                }
+                .ssp-text {
+                    flex: 1;
+                    widows: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: center;
+                    p {
+                        font-size: 16px;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+    }
+    //合作院校
+    .s-partner {
+        width: 100%;
+        height: auto;
+        padding: 80px 0 30px 0;
+        background: white;
+        .spa-title {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .spa-english {
+            font-size: 20px;
+            color: #ADADAD;
+            text-align: center;
+        }
+        .spa-pardon {
+            width: 1200px;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-top: 80px;
+            .spap-item {
+                width: 267px;
+                height: auto;
+                .spapi-img {
+                    width: 100%;
+                    height: auto;
+                }
+                p {
+                    text-align: center;
+                    margin: 15px 0;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+//以下为响应式
+@media screen and (max-width: 1024px) {
+    .banner .b-content .bc-left {
+        width: 455px;
+        .bcl-title span {
+            display: block;
+        }
+    }
+    section {
+        width: 100%;
+        .s-title {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 40px;
+        }
+        .s-enterprise {
+            width: 100%;
+            margin-top: 40px;
+            .se-title {
+                width: 90%;
+                margin: 0 auto;
+                line-height: normal;
+                p {
+                    font-size: 30px;
+                }
+            }
+            .se-content {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                .sec-left {
+                    position: relative;
+                    a {
+                        position: absolute;
+                        left: auto;
+                        top: 115px;
+                        right: 30px;
+                        font-size: 20px;
+                    }
+                    .secl-text {
+                        font-size: 20px;
+                    }
+                }
+                .sec-right {
+                    width: 80%;
+                    .secr-title {
+                        font-size: 30px;
+                    }
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        //战略合作伙伴
+        .s-strategic {
+            width: 100%;
+            .ss-title {
+                width: 90%;
+                margin: 0 auto;
+                line-height: normal;
+                p {
+                    font-size: 30px;
+                }
+            }
+            .ss-img {
+                flex-wrap: wrap;
+                justify-content: center;
+                .ssi-item {
+                    margin: 20px 20px;
+                    width: 60%;
+                    &:first-child {
+                        width: 60%;
+                    }
+                    &:last-child {
+                        width: 60%;
+                    }
+                    .ssii-text {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .ss-imgt {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .ssi-left {
+                    width: 60%;
+                }
+                .ssi-right {
+                    width: 60%;
+                }
+            }
+            .ss-bottomT {
+                width: 95%;
+                height: auto;
+                margin: 10px auto;
+                a {
+                    position: absolute;
+                    left: auto;
+                    right: 20px;
+                    bottom: -30px;
+                    top: auto;
+                    font-size: 20px;
+                }
+                .ss-text {
+                    width: 100%;
+                    font-size: 20px;
+                }
+            }
+        }
+        //专业介绍
+        .s-professional {
+            .sp-title,
+            .sp-english {
+                font-size: 30px;
+            }
+            .sp-content {
+                width: 70%;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+        }
+        // 招生入学流程
+        .s-admissions {
+            .sa-top {
+                .sat-left {
+                    width: 560px;
+                    .satl-h2 {
+                        font-size: 25px;
+                    }
+                    ul {
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .sat-right{
+                    .satr-item{
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .sa-center{
+                h3{
+                    font-size: 30px;
+                }
+                .sa-option{
+                    .sao-item{
+                        div p{
+                            font-size: 20px !important;
+                        }
+                    }
+                }
+            }
+        }
+        //部分师资力量
+        .s-strength {
+            .ss-title, .ss-english{
+                font-size: 30px;
+            }
+            .ss-pardon {
+                width: 90%;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                li{
+                    margin: 20px 3%;
+                    .ssp-text p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        //合作院校
+        .s-partner {
+            .spa-title,.spa-english{
+                font-size: 30px;
+            }
+            .spa-pardon {
+                width: 98%;
+                .spap-item{
+                    p{
+                        font-size: 20;
                     }
                 }
             }

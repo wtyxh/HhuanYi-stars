@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/szll.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="nav-logo">
+					<img src="img/logo.png" title="logo" alt="logo" />
+				</div>
+				<div class="nav-content">
+					<ul>
+						<li>
+							<a href="../index.html">首页</a>
+						</li>
+						<li>
+							<a href="">关于我们</a>
+						</li>
+						<li  class="nav-active">
+							<a href="">师资力量</a>
+						</li>
+						<li>
+							<a href="">课程介绍</a>
+						</li>
+						<li>
+							<a href="">校园风采</a>
+						</li>
+						<li>
+							<a href="">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="banner">
+				
+			</div>
+		</header>
+		<section>
+			<h2>部分师资力量</h2>
+			<p class="s-english">Teacher strength</p>
+			<div class="s-content">
+				<div class="sc-item">
+					<div class="sci-img">
+						<img src="img/szll/1.png" alt="">
+					</div>
+					<p class="sci-title">特约教授 kim sang  jun</p>
+					<p class="sci-title">寰艺之星结业考核考官</p>
+					<p class="sci-content">m entertainment 嘻哈、爵士舞蹈教练；东方神起，super junior等韩国人气男团舞蹈教练</p>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer">
+				<div class="f-content">
+					<dic class="fc-left">
+						<p>关注寰艺</p>
+						<img src="img/qr-code.png" alt="二维码" title="二维码" />
+					</dic>
+					<div class="fc-center">
+						<p>友情链接</p>
+						<p>首尔艺术大学</p>
+						<p>秋溪艺术大学</p>
+					</div>
+					<div class="fc-right">
+						<div class="fcr-pardon">
+							<p>咨询热线</p>
+							<div class="fcr-item">
+								<i class="ficr1"></i>
+								<p>座机 ：000000</p>
+							</div>
+							<div class="fcr-item">
+								<i class="frci2"></i>
+								<p>手机 ：00000000</p>
+							</div>
+							<div class="fcr-item">
+								<i class="frci3"></i>
+								<p>联系人 ：经理</p>
+							</div>
+							<div class="fcr-item">
+								<i class="frci4"></i>
+								<p>电子邮箱 ：haiyi@QQ.com</p>
+							</div>
+							<div class="fcr-item">
+								<i class="frci5"></i>
+								<p>联系地址 ：xxxxxxxxxxx</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--版权-->
+			<div class="copyright">
+				<p>重庆寰艺之星有限公司 ©HY1688.COM 版权所有 备案号 ：123465</p>
+			</div>
+		</footer>
+		<script src="vendor/jquery.min.js"></script>
+		<script>
+			let v_str = `<div class="sc-item">${ $('.sc-item').html() }</div>`;
+			for(let i = 0;i <= 20; i++){
+				$('.s-content').append(v_str)
+			}
+		</script>
+	</body>
+</html>

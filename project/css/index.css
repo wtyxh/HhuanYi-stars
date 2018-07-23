@@ -343,6 +343,9 @@ section .s-professional .sp-content .spc-item {
   height: 360px;
   background: white;
   margin: 20px 0;
+  display: flex;
+  flex-flow: column;
+  cursor: pointer;
 }
 section .s-professional .sp-content .spc-item .spci-img {
   width: 100%;
@@ -350,6 +353,428 @@ section .s-professional .sp-content .spc-item .spci-img {
   overflow: hidden;
 }
 section .s-professional .sp-content .spc-item .spci-img img {
+  width: auto;
+  height: 100%;
+}
+section .s-professional .sp-content .spc-item .spci-text {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-professional .sp-content .spc-item .spci-text span {
+  display: block;
+  width: 170px;
+  height: 55px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 55px;
+  font-size: 27px;
+  color: #FC8A03;
+  border: 1px solid #FC8A03;
+  border-radius: 50px;
+}
+section .s-professional .sp-content .spc-item:hover .spci-text span {
+  color: white;
+  background: #FC8A03;
+}
+section .s-admissions {
   width: 100%;
   height: auto;
+  background: #F9F9F9;
+  padding: 100px 0;
+}
+section .s-admissions .sa-top {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-admissions .sa-top .sat-left {
+  width: 510px;
+  height: auto;
+  line-height: 40px;
+}
+section .s-admissions .sa-top .sat-left .satl-h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+}
+section .s-admissions .sa-top .sat-left .satl-h2 {
+  font-size: 19px;
+  text-align: left;
+}
+section .s-admissions .sa-top .sat-left ul {
+  margin-left: 20px;
+  line-height: 50px;
+}
+section .s-admissions .sa-top .sat-right {
+  width: 320px;
+  height: auto;
+}
+section .s-admissions .sa-top .sat-right .satr-title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+section .s-admissions .sa-top .sat-right .satr-item {
+  width: 320px;
+  height: 45px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  background: #FC8A03;
+}
+section .s-admissions .sa-top .sat-right .satr-item p {
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+section .s-admissions .sa-top .sat-right i {
+  display: block;
+  width: 20px;
+  height: 25px;
+  background: url('../img/kcjs/1.png') no-repeat;
+  background-size: 100% 100%;
+  margin: 5px auto;
+}
+section .s-admissions .sa-center {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+section .s-admissions .sa-center h3 {
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+section .s-admissions .sa-center .sa-option {
+  width: 100%;
+  height: auto;
+}
+section .s-admissions .sa-center .sa-option .sao-item {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-big {
+  width: 540px;
+  height: 100%;
+  background: #EEEEEE;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-big p {
+  text-align: center;
+  font-size: 14px;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-small {
+  width: 179px;
+  height: 100%;
+  background: #EEEEEE;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-admissions .sa-center .sa-option .sao-item .saoi-small p {
+  text-align: center;
+  font-size: 14px;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-big {
+  background: #FC8A03;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-big p {
+  color: white;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-small {
+  background: #FC8A03;
+}
+section .s-admissions .sa-center .sa-option .saoi-double .saoi-small p {
+  color: white;
+}
+section .s-admissions .sa-join {
+  width: 100%;
+  height: auto;
+}
+section .s-admissions .sa-join p {
+  width: 140px;
+  height: 45px;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #FC8A03;
+  border-radius: 50px;
+  color: #FC8A03;
+  line-height: 45px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+section .s-strength {
+  width: 100%;
+  height: auto;
+  background: #ECECEC;
+  padding: 40px 0;
+  padding-bottom: 60px;
+}
+section .s-strength .ss-title {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section .s-strength .ss-english {
+  font-size: 20px;
+  color: #ADADAD;
+  text-align: center;
+}
+section .s-strength .ss-pardon {
+  width: 1190px;
+  height: auto;
+  margin: 30px auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .s-strength .ss-pardon li {
+  width: 240px;
+  height: 330px;
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+section .s-strength .ss-pardon li .ssp-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+section .s-strength .ss-pardon li .ssp-img img {
+  width: 100%;
+  height: auto;
+}
+section .s-strength .ss-pardon li .ssp-text {
+  flex: 1;
+  widows: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+section .s-strength .ss-pardon li .ssp-text p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+section .s-partner {
+  width: 100%;
+  height: auto;
+  padding: 80px 0 30px 0;
+  background: white;
+}
+section .s-partner .spa-title {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+section .s-partner .spa-english {
+  font-size: 20px;
+  color: #ADADAD;
+  text-align: center;
+}
+section .s-partner .spa-pardon {
+  width: 1200px;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+section .s-partner .spa-pardon .spap-item {
+  width: 267px;
+  height: auto;
+}
+section .s-partner .spa-pardon .spap-item .spapi-img {
+  width: 100%;
+  height: auto;
+}
+section .s-partner .spa-pardon .spap-item p {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  .banner .b-content .bc-left {
+    width: 455px;
+  }
+  .banner .b-content .bc-left .bcl-title span {
+    display: block;
+  }
+  section {
+    width: 100%;
+  }
+  section .s-title {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+  section .s-enterprise {
+    width: 100%;
+    margin-top: 40px;
+  }
+  section .s-enterprise .se-title {
+    width: 90%;
+    margin: 0 auto;
+    line-height: normal;
+  }
+  section .s-enterprise .se-title p {
+    font-size: 30px;
+  }
+  section .s-enterprise .se-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  section .s-enterprise .se-content .sec-left {
+    position: relative;
+  }
+  section .s-enterprise .se-content .sec-left a {
+    position: absolute;
+    left: auto;
+    top: 115px;
+    right: 30px;
+    font-size: 20px;
+  }
+  section .s-enterprise .se-content .sec-left .secl-text {
+    font-size: 20px;
+  }
+  section .s-enterprise .se-content .sec-right {
+    width: 80%;
+  }
+  section .s-enterprise .se-content .sec-right .secr-title {
+    font-size: 30px;
+  }
+  section .s-enterprise .se-content .sec-right img {
+    width: 100%;
+  }
+  section .s-strategic {
+    width: 100%;
+  }
+  section .s-strategic .ss-title {
+    width: 90%;
+    margin: 0 auto;
+    line-height: normal;
+  }
+  section .s-strategic .ss-title p {
+    font-size: 30px;
+  }
+  section .s-strategic .ss-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section .s-strategic .ss-img .ssi-item {
+    margin: 20px 20px;
+    width: 60%;
+  }
+  section .s-strategic .ss-img .ssi-item:first-child {
+    width: 60%;
+  }
+  section .s-strategic .ss-img .ssi-item:last-child {
+    width: 60%;
+  }
+  section .s-strategic .ss-img .ssi-item .ssii-text {
+    font-size: 20px;
+  }
+  section .s-strategic .ss-imgt {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  section .s-strategic .ss-imgt .ssi-left {
+    width: 60%;
+  }
+  section .s-strategic .ss-imgt .ssi-right {
+    width: 60%;
+  }
+  section .s-strategic .ss-bottomT {
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
+  }
+  section .s-strategic .ss-bottomT a {
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: -30px;
+    top: auto;
+    font-size: 20px;
+  }
+  section .s-strategic .ss-bottomT .ss-text {
+    width: 100%;
+    font-size: 20px;
+  }
+  section .s-professional .sp-title,
+  section .s-professional .sp-english {
+    font-size: 30px;
+  }
+  section .s-professional .sp-content {
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  section .s-admissions .sa-top .sat-left {
+    width: 560px;
+  }
+  section .s-admissions .sa-top .sat-left .satl-h2 {
+    font-size: 25px;
+  }
+  section .s-admissions .sa-top .sat-left ul li {
+    font-size: 20px;
+  }
+  section .s-admissions .sa-top .sat-right .satr-item p {
+    font-size: 20px;
+  }
+  section .s-admissions .sa-center h3 {
+    font-size: 30px;
+  }
+  section .s-admissions .sa-center .sa-option .sao-item div p {
+    font-size: 20px !important;
+  }
+  section .s-strength .ss-title,
+  section .s-strength .ss-english {
+    font-size: 30px;
+  }
+  section .s-strength .ss-pardon {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  section .s-strength .ss-pardon li {
+    margin: 20px 3%;
+  }
+  section .s-strength .ss-pardon li .ssp-text p {
+    font-size: 20px;
+  }
+  section .s-partner .spa-title,
+  section .s-partner .spa-english {
+    font-size: 30px;
+  }
+  section .s-partner .spa-pardon {
+    width: 98%;
+  }
+  section .s-partner .spa-pardon .spap-item p {
+    font-size: 20;
+  }
 }

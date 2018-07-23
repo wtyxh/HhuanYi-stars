@@ -1,0 +1,305 @@
+section {
+  width: 100%;
+  height: auto;
+}
+section .s-tab {
+  width: 100%;
+  height: auto;
+  margin: 80px 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+section .s-tab .st-ltem {
+  width: 230px;
+  height: 65px;
+  line-height: 65px;
+  text-align: center;
+  color: black;
+  background: #EEEEEE;
+  font-weight: bold;
+  font-size: 32px;
+  cursor: pointer;
+}
+section .s-tab .sti-active {
+  color: black;
+  background: #FC8A03;
+}
+section .s-huanyi {
+  width: 1050px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+section .s-huanyi .sh-title {
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 40px;
+  color: black;
+}
+section .s-huanyi .sh-imgs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-huanyi .sh-imgs .shi-left {
+  width: 630px;
+  height: auto;
+  font-size: 0;
+}
+section .s-huanyi .sh-imgs .shi-left .shil-item {
+  width: 100%;
+  height: auto;
+}
+section .s-huanyi .sh-imgs .shi-left .shil-item .shili-title {
+  width: 100%;
+  padding: 10px 0;
+  background: #FC8A03;
+  color: white;
+  font-size: 23px;
+  text-indent: 20px;
+}
+section .s-huanyi .sh-imgs .shi-left .shil-item img {
+  width: 100%;
+  height: auto;
+}
+section .s-huanyi .sh-imgs .shi-right {
+  width: 388px;
+  height: auto;
+  font-size: 0;
+}
+section .s-huanyi .sh-imgs .shi-right .shir-strong {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  margin: 16px auto;
+}
+section .s-huanyi .sh-imgs .shi-right .shir-item {
+  width: 100%;
+  height: auto;
+}
+section .s-huanyi .sh-imgs .shi-right .shir-item .shiri-title {
+  width: 100%;
+  padding: 10px 0;
+  background: #FC8A03;
+  color: white;
+  font-size: 23px;
+  text-indent: 20px;
+}
+section .s-huanyi .sh-imgs .shi-right .shir-item img {
+  width: 100%;
+  height: auto;
+}
+section .s-huanyi h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 80px;
+  font-weight: normal;
+}
+section .s-huanyi .sh-text {
+  width: 100%;
+  height: auto;
+  padding-bottom: 80px;
+}
+section .s-huanyi .sh-text .sht-item {
+  width: 100%;
+  height: auto;
+  margin: 50px auto;
+}
+section .s-huanyi .sh-text .sht-item .shti-title {
+  color: #FC8A03;
+  font-size: 20px;
+}
+section .s-huanyi .sh-text .sht-item .shti-text {
+  color: black;
+  font-size: 20px;
+}
+section .s-guo {
+  display: none;
+}
+section .s-guo .sg-title {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+section .s-guo .sg-title span {
+  color: #FC8A03;
+}
+section .s-guo .sg-introdution {
+  width: 1050px;
+  height: auto;
+  text-indent: 20px;
+  margin: 0 auto;
+  line-height: 30px;
+  margin-top: 40px;
+}
+section .s-guo .sg-introdution span {
+  font-weight: bold;
+}
+section .s-guo .sg-shouer {
+  width: 1032px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+section .s-guo .sg-shouer .sgs-top {
+  width: 1032px;
+  height: auto;
+  border: 1px solid #EEEEEE;
+  border-bottom: none;
+}
+section .s-guo .sg-shouer .sgs-top img {
+  width: 100%;
+  height: auto;
+}
+section .s-guo .sg-shouer .sgs-imgs {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+section .s-guo .sg-shouer .sgs-imgs .sgs-left {
+  width: 510px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  font-size: 0;
+}
+section .s-guo .sg-shouer .sgs-imgs .sgs-left img {
+  width: 100%;
+  height: auto;
+}
+section .s-guo .sg-shouer .sgs-imgs .sgs-right {
+  width: 514px;
+  height: 640px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  font-size: 0;
+}
+section .s-guo .sg-shouer .sgs-imgs .sgs-right img {
+  width: 100%;
+  height: auto;
+}
+section .s-guo h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 100px 0 30px 0;
+}
+section .s-guo .sg-text2 {
+  font-size: 14px;
+  text-indent: 30px;
+  line-height: 30px;
+  width: 1032px;
+  margin: 0 auto;
+}
+section .s-guo .sg-text2 span {
+  font-weight: bold;
+}
+section .s-guo .sg-end {
+  width: 1032px;
+  height: auto;
+  margin: 55px auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1024px) {
+  section .sg-title {
+    font-size: 30px;
+  }
+  section .s-huanyi {
+    width: 100%;
+    height: auto;
+  }
+  section .s-huanyi .sh-title {
+    font-size: 30px;
+  }
+  section .s-huanyi .sh-imgs {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  section .s-huanyi .sh-imgs .shi-left {
+    width: 100%;
+    height: auto;
+  }
+  section .s-huanyi .sh-imgs .shi-left .shil-item .shili-title {
+    font-size: 20px;
+  }
+  section .s-huanyi .sh-imgs .shi-right {
+    width: 100%;
+    height: auto;
+  }
+  section .s-huanyi .sh-imgs .shi-right .shir-item .shiri-title {
+    font-size: 20px;
+  }
+  section .s-huanyi .sh-text {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  section .s-guo .sg-introdution {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  section .s-guo .sg-shouer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  section .s-guo .sg-shouer .sgs-top {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  section .s-guo .sg-shouer .sgs-top img {
+    width: 1030px;
+    height: auto;
+  }
+  section .s-guo .sg-shouer .sgs-imgs {
+    flex-wrap: wrap;
+    font-size: 0;
+  }
+  section .s-guo .sg-shouer .sgs-imgs .sgs-left {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+  }
+  section .s-guo .sg-shouer .sgs-imgs .sgs-right {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+  }
+  section .s-guo h2 {
+    font-size: 30px;
+  }
+  section .s-guo .sg-text2 {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  section .s-guo .sg-end {
+    width: 95%;
+    height: auto;
+    flex-wrap: wrap;
+    display: block;
+  }
+  section .s-guo .sg-end img {
+    width: 100%;
+    height: auto;
+  }
+  section .s-guo .sg-end img:first-child {
+    margin-bottom: 10px;
+  }
+}
