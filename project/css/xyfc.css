@@ -1,3 +1,28 @@
+.banner {
+  height: 400px !important;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% auto !important;
+  margin-top: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.banner .title {
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.banner .title2 {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  padding: 10px 0;
+  width: 160px;
+  background: white;
+  margin: 0 auto;
+  cursor: pointer;
+}
 section {
   width: 100%;
   height: auto;
@@ -110,11 +135,11 @@ section .s-huanyi .sh-text .sht-item {
 }
 section .s-huanyi .sh-text .sht-item .shti-title {
   color: #FC8A03;
-  font-size: 20px;
+  font-size: 18px;
 }
 section .s-huanyi .sh-text .sht-item .shti-text {
   color: black;
-  font-size: 20px;
+  font-size: 16px;
 }
 section .s-guo {
   display: none;
@@ -135,6 +160,7 @@ section .s-guo .sg-introdution {
   margin: 0 auto;
   line-height: 30px;
   margin-top: 40px;
+  font-size: 14px;
 }
 section .s-guo .sg-introdution span {
   font-weight: bold;

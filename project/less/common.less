@@ -26,7 +26,7 @@ header {
                 height: auto;
                 margin: 0 auto;
                 position: relative;
-                top: -1px;
+                top: 14px;
                 left: -1px;
             }
         }
@@ -40,6 +40,7 @@ header {
                 display: flex;
                 flex-flow: row;
                 justify-content: flex-end;
+                margin-bottom: 0;
                 li {
                     list-style: none;
                     width: 74px;
@@ -114,16 +115,21 @@ footer {
                 height: auto;
                 text-align: center;
                 p {
-                    color: rgba(255, 255, 255, 0.5);
-                    margin: 10px 0;
-                    text-align: left;
-                    text-indent: 30px;
+                    
                     &:first-child {
                         font-size: 18px;
                         margin-bottom: 17px;
                         margin-top: 0;
                         color: white;
                     }
+                }
+                a{
+                    color: rgba(255, 255, 255, 0.5);
+                    margin: 10px 0;
+                    text-align: left;
+                    text-indent: 30px;
+                    display: block;
+                    text-decoration: none;
                 }
             }
             .fc-right {
@@ -133,9 +139,9 @@ footer {
                 font-size: 0;
                 display: flex;
                 flex-flow: row;
-                justify-content: center;
+                justify-content: flex-end;
                 .fcr-pardon {
-                    width: 260px;
+                    width: 400px;
                     height: auto;
                     p {
                         text-align: left;
@@ -225,7 +231,7 @@ footer {
                         a {
                             font-size: 20px;
                         }
-                        &:last-child{
+                        &:last-child {
                             margin-right: 40px;
                         }
                     }
@@ -245,29 +251,41 @@ footer {
                 width: 100%;
                 .fc-left {
                     flex: 1;
-                    p{
+                    p {
                         font-size: 20px;
                     }
                 }
-                .fc-center{
+                .fc-center {
                     width: 230px;
-                    p{
+                    p {
                         font-size: 20px;
-                        &:first-child{
+                        &:first-child {
                             font-size: 25px;
                         }
                     }
                 }
-                .fc-right{
-                    .fcr-pardon{
-                        width: 290px;
-                        p{
-                            &:first-child{
+                .fc-right {
+                    .fcr-pardon {
+                        width: 400px;
+                        margin-right: 20px;
+                        .fcr-item {
+                            width: 100%;
+                            height: auto;
+                            display: flex;
+                            flex-flow: row;
+                            justify-content: flex-end;
+                            p {
+                                width: 370px;
+                                text-indent: 0;
+                            }
+                        }
+                        p {
+                            &:first-child {
                                 font-size: 25px;
                             }
                         }
-                        .fcr-item{
-                            p{
+                        .fcr-item {
+                            p {
                                 font-size: 20px;
                             }
                         }

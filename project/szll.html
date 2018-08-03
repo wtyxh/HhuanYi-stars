@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/szll.css">
 	</head>
+
 	<body>
 		<header>
 			<nav>
@@ -18,39 +20,32 @@
 							<a href="../index.html">首页</a>
 						</li>
 						<li>
-							<a href="">关于我们</a>
+							<a href="gywm.html">关于我们</a>
 						</li>
-						<li  class="nav-active">
-							<a href="">师资力量</a>
-						</li>
-						<li>
-							<a href="">课程介绍</a>
+						<li class="nav-active">
+							<a href="szll.html">师资力量</a>
 						</li>
 						<li>
-							<a href="">校园风采</a>
+							<a href="kcjs.html">课程介绍</a>
 						</li>
 						<li>
-							<a href="">联系我们</a>
+							<a href="xyfc.html">校园风采</a>
+						</li>
+						<li>
+							<a href="llwm.html">联系我们</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 			<div class="banner">
-				
+                <img class="title" src="img/font.png" alt="艺术改变人生" />
+                <p class="title2" onclick="window.open('llwm.html')">咨询寰艺之星</p>
 			</div>
 		</header>
 		<section>
 			<h2>部分师资力量</h2>
 			<p class="s-english">Teacher strength</p>
 			<div class="s-content">
-				<div class="sc-item">
-					<div class="sci-img">
-						<img src="img/szll/1.png" alt="">
-					</div>
-					<p class="sci-title">特约教授 kim sang  jun</p>
-					<p class="sci-title">寰艺之星结业考核考官</p>
-					<p class="sci-content">m entertainment 嘻哈、爵士舞蹈教练；东方神起，super junior等韩国人气男团舞蹈教练</p>
-				</div>
 			</div>
 		</section>
 		<footer>
@@ -62,31 +57,31 @@
 					</dic>
 					<div class="fc-center">
 						<p>友情链接</p>
-						<p>首尔艺术大学</p>
-						<p>秋溪艺术大学</p>
+						<a href="http://www.seoularts.ac.kr/mbs/kr/index.jsp">首尔艺术大学</a>
+						<a href="https://www.chugye.ac.kr/mbs/university/">秋溪艺术大学</a>
 					</div>
 					<div class="fc-right">
 						<div class="fcr-pardon">
 							<p>咨询热线</p>
 							<div class="fcr-item">
 								<i class="ficr1"></i>
-								<p>座机 ：000000</p>
+								<p>座机 ：023-86092217</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci2"></i>
-								<p>手机 ：00000000</p>
+								<p>手机 ：17723157197</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci3"></i>
-								<p>联系人 ：经理</p>
+								<p>联系人 ：侯经理</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci4"></i>
-								<p>电子邮箱 ：haiyi@QQ.com</p>
+								<p>电子邮箱 ：180777829@qq.com</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci5"></i>
-								<p>联系地址 ：xxxxxxxxxxx</p>
+								<p>联系地址 ：重庆市渝北区重庆创意公园13栋4单元3F</p>
 							</div>
 						</div>
 					</div>
@@ -94,15 +89,35 @@
 			</div>
 			<!--版权-->
 			<div class="copyright">
-				<p>重庆寰艺之星有限公司 ©HY1688.COM 版权所有 备案号 ：123465</p>
+                <p>重庆雄亚寰艺文化传媒有限公司 ©2017 Hi-Star.com.cn 版权所有 渝ICP备18000358号-1</p>
 			</div>
 		</footer>
 		<script src="vendor/jquery.min.js"></script>
+		<script src="back-end/js/url.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			let v_str = `<div class="sc-item">${ $('.sc-item').html() }</div>`;
-			for(let i = 0;i <= 20; i++){
-				$('.s-content').append(v_str)
-			}
+			$.ajax({
+				type: "post",
+				url: "/api/Img/GetImgs",
+				async: true,
+				data: {},
+				success: function(res) {
+                    var data = JSON.parse(res);
+					for(var i = 0; i < data.length; i++) {
+						var ccc = '';
+						i <= 3 ? ccc= '<p class="sci-title">寰艺之星结业考核考官</p>' : '';
+						var v_str = '<div class="sc-item">' +
+									'<div class="sci-img"><img src="'+data[i].ImgShowPath+'" alt=""></div>' +
+									'<p class="sci-title">'+data[i].TeacherName+'</p>'+ccc+
+									'<p class="sci-content">'+data[i].ManDescribe+'</p>'
+								'</div>'
+						$('.s-content').append(v_str);
+					}
+				},
+				error: function(err) {
+					console.log(err)
+				}
+			});
 		</script>
 	</body>
+
 </html>

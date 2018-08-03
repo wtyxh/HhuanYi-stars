@@ -1,26 +1,27 @@
 .banner {
-  border-top: 1px solid transparent;
+  height: 400px !important;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% auto !important;
+  margin-top: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
-.banner .b-title {
-  width: 1200px;
+.banner .title {
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.banner .title2 {
   text-align: center;
-  margin: 0 auto;
-  font-size: 42px;
-  color: white;
-  margin-top: 145px;
-}
-.banner .b-consulting {
-  display: block;
-  text-decoration: none;
-  width: 160px;
-  height: 35px;
-  margin: 0 auto;
   font-size: 14px;
-  line-height: 35px;
-  text-align: center;
   color: black;
-  margin-top: 40px;
+  padding: 10px 0;
+  width: 160px;
   background: white;
+  margin: 0 auto;
+  cursor: pointer;
 }
 section {
   width: 100%;

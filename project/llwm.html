@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/lxwm.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="img/logo.png" title="logo" alt="logo" />
+            </div>
+            <div class="nav-content">
+                <ul>
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="gywm.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="szll.html">师资力量</a>
+                    </li>
+                    <li>
+                        <a href="kcjs.html">课程介绍</a>
+                    </li>
+                    <li>
+                        <a href="xyfc.html">校园风采</a>
+                    </li>
+                    <li class="nav-active">
+                        <a href="llwm.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="banner">
+            <img class="title" src="img/font.png" alt="艺术改变人生" />
+            <p class="title2" onclick="window.open('llwm.html')">咨询寰艺之星</p>
+        </div>
+    </header>
+    <section>
+        <p class="s-title">联系我们</p>
+        <p class="s-english">Contact Us</p>
+        <form action="" method="post" onsubmit="return formsubmit();">
+            <p>咨询专业留言：</p>
+            <textarea name="liuyan" required="required" rows="" cols="" style="resize: none;"></textarea>
+            <p>您的称呼：</p>
+            <input type="text" required="required" name="name" id="name" value="" />
+            <p>您的手机</p>
+            <input type="number" required="required" style="-moz-appearance: textfield;-webkit-appearance: none;" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" name="phone" id="phone" value="" />
+            <label class="submit" for="submit">提交</label>
+            <input type="submit" id="submit" value="提交" />
+        </form>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="f-content">
+                <dic class="fc-left">
+                    <p>关注寰艺</p>
+                    <img src="img/qr-code.png" alt="二维码" title="二维码" />
+                </dic>
+                <div class="fc-center">
+                    <p>友情链接</p>
+                    <a href="http://www.seoularts.ac.kr/mbs/kr/index.jsp">首尔艺术大学</a>
+                    <a href="https://www.chugye.ac.kr/mbs/university/">秋溪艺术大学</a>
+                </div>
+                <div class="fc-right">
+                    <div class="fcr-pardon">
+                        <p>咨询热线</p>
+                        <div class="fcr-item">
+                            <i class="ficr1"></i>
+                            <p>座机 ：023-86092217</p>
+                        </div>
+                        <div class="fcr-item">
+                            <i class="frci2"></i>
+                            <p>手机 ：17723157197</p>
+                        </div>
+                        <div class="fcr-item">
+                            <i class="frci3"></i>
+                            <p>联系人 ：侯经理</p>
+                        </div>
+                        <div class="fcr-item">
+                            <i class="frci4"></i>
+                            <p>电子邮箱 ：180777829@qq.com</p>
+                        </div>
+                        <div class="fcr-item">
+                            <i class="frci5"></i>
+                            <p>联系地址 ：重庆市渝北区重庆创意公园13栋4单元3F</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--版权-->
+        <div class="copyright">
+            <p>重庆雄亚寰艺文化传媒有限公司 ©2017 Hi-Star.com.cn 版权所有 渝ICP备18000358号-1</p>
+        </div>
+    </footer>
+    <script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="back-end/js/url.js"></script>
+    <script type="text/javascript">
+        function go() {
+            var formData = new FormData($('form')[0])
+            $.ajax({
+                type: "post",
+                url: "/api/Email/Email",
+                async: true,
+                dataType: 'json',
+                contentType: false,
+                processData: false,
+                data: formData,
+                success: function (res) {
+                    res == '1' ? alert('已发送') : alert('发送失败');
+                    res == '1' ? window.location.href = 'llwm.html' : '';
+                    console.log(res)
+                },
+                error: function (err) {
+
+                }
+            });
+        }
+
+        function formsubmit() {
+            go();
+            return false;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑";
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+html body {
+  width: 100%;
+  height: 100%;
+}
+html body .background {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/2.jpg);
+  background-size: 100% auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #FDA618;
+}
+section {
+  padding: 80px 0;
+}
+section .add {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+section .add button {
+  font-size: 18px;
+}
+section .s-table {
+  width: 1200px;
+  border: 10px solid white;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+section .s-table .table {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
+section .s-table .table thead tr {
+  background: white;
+}
+section .s-table .table thead tr th {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+section .s-table .table tbody tr td {
+  text-align: center;
+}
+section .s-table .table tbody tr td .btn {
+  font-size: 14px;
+  margin: 0 10px;
+}
+section .s-table .table tbody tr td:last-child {
+  width: 310px;
+}
+section .v-pardon {
+  width: 100%;
+  height: auto;
+}
+section .v-pardon .vp-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 10px 0;
+}
+section .v-pardon .vp-img img {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+section .v-pardon .v-text {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+section .v-pardon .v-text p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+}
+section #changeForm {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+section #changeForm textarea {
+  width: 530px;
+  height: 80px;
+  resize: none;
+}
+section #changeForm button {
+  width: 532px;
+}
+section #addForm {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+section #addForm textarea {
+  width: 530px;
+  height: 80px;
+  resize: none;
+}
+section #addForm input[name="txtTeacherName"] {
+  width: 530px;
+  padding: 3px 0;
+}
+section #addForm button {
+  width: 532px;
+}

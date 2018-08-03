@@ -1,0 +1,87 @@
+.banner {
+  height: 400px !important;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% auto !important;
+  margin-top: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.banner .title {
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.banner .title2 {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  padding: 10px 0;
+  width: 160px;
+  background: white;
+  margin: 0 auto;
+  cursor: pointer;
+}
+section {
+  padding: 80px 0;
+}
+section .s-title {
+  font-size: 30px;
+  text-align: center;
+}
+section .s-english {
+  font-size: 20px;
+  text-align: center;
+  color: #757575;
+}
+section form {
+  width: 490px;
+  height: auto;
+  margin: 0 auto;
+}
+section form p {
+  font-size: 14px;
+  color: black;
+  margin: 10px 0;
+}
+section form textarea {
+  width: 100%;
+  height: 90px;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: 1px solid #BFBFBF;
+}
+section form input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 14px;
+  border: 1px solid #BFBFBF;
+}
+section form input::-webkit-outer-spin-button,
+section form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+section form input[type="number"] {
+  -moz-appearance: textfield;
+}
+section form input[type="submit"] {
+  display: none;
+}
+section form .submit {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  background: #FDBE71;
+  color: white;
+  margin-top: 50px;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>寰艺之星</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="b-background"></div>
+		<div class="modal">
+			<div class="text">没有该账户信息</div>
+		</div>
+		<div class="form">
+			<form action="" method="post" onsubmit="return false">
+				<p>欢迎来到寰艺之星</p>
+				<p>账号：</p>
+				<input type="text" autocomplete="off" required="required" name="username" id="username" value="" />
+				<p>密码：</p>
+				<input type="password" required="required" name="password" id="password" value="" />
+				<label for="submit">登&nbsp;&nbsp;&nbsp;陆</label>
+				
+					<input type="submit" onclick="login();" id="submit" value="登陆" />
+			</form>
+		</div>
+		<script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/url.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			function login() {
+				$.ajax({
+					type: "post",
+					url: url+"/api/User/UserLogin",
+					async: true,
+					data: {
+						name: $('input[name="username"]').val(),
+						PassWord: $('input[name="password"]').val(),
+					},
+					success: function(res) {
+						console.log(res);
+						if(res !== '1') {
+							$('.text').text(res)
+							$('.modal').css('display', 'flex');
+							setTimeout(function() {
+								$('.text').css('width', '160px')
+								$('.text').css('opacity', '1');
+							}, 1)
+							setTimeout(function() {
+								close();
+							}, 1000)
+						} else {
+							$('.text').text('欢迎登陆寰艺之星');
+							$('.text').append('<p>3秒后进入系统</p>');
+							$('.modal').css('display', 'flex');
+							setTimeout(function() {
+								$('.text').css('width', '160px')
+								$('.text').css('opacity', '1');
+							}, 1);
+							setTimeout(function() {
+								close();
+								window.location.href = "management.html?username=" + $('input[name="username"]').val() + "&password=" + $('input[name="password"]').val()
+							}, 3000)
+						}
+					},
+					error: function(err) {
+
+					}
+				});
+			}
+
+			function close() {
+				$('.text').css('opacity', '0');
+				setTimeout(function() {
+					$('.modal').css('display', 'none');
+				}, 300)
+			}
+		</script>
+	</body>
+
+</html>

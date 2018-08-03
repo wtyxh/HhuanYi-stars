@@ -1,25 +1,27 @@
 .banner {
-    border-top: 1px solid transparent;
-    .b-title {
-        width: 1200px;
-        text-align: center;
+    height: 400px !important;
+    background: url(../img/banner.png) no-repeat;
+    background-size: 100% auto !important;
+    margin-top: 1px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    .title {
+        width: 450px;
+        height: auto;
         margin: 0 auto;
-        font-size: 42px;
-        color: white;
-        margin-top: 145px;
+        margin-bottom: 30px;
     }
-    .b-consulting {
-        display: block;
-        text-decoration: none;
-        width: 160px;
-        height: 35px;
-        margin: 0 auto;
-        font-size: 14px;
-        line-height: 35px;
+    .title2 {
         text-align: center;
+        font-size: 14px;
         color: black;
-        margin-top: 40px;
+        cursor: pointer;
+        padding: 10px 0;
+        width: 160px;
         background: white;
+        margin: 0 auto;
+        cursor: pointer;
     }
 }
 
@@ -79,7 +81,6 @@ section {
             display: flex;
             flex-flow: row;
             justify-content: flex-end;
-            
             img {
                 width: 335px;
                 border: 5px solid #dee2e1;
@@ -188,7 +189,7 @@ section {
 
 //以下响应式css
 @media screen and (max-width: 1024px) {
-    .banner .b-title{
+    .banner .b-title {
         width: 100%;
     }
     section {
@@ -267,10 +268,10 @@ section {
                 .ssb-left {
                     width: 80%;
                 }
-                .ssb-right{
+                .ssb-right {
                     width: 80%;
                     height: auto;
-                    img{
+                    img {
                         width: 100%;
                         height: auto;
                     }

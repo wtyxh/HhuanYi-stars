@@ -1,94 +1,20 @@
 //banner内容
+@font-face {
+    font-family: 'sb';
+    src: url('../font/全新硬笔楷书简.ttf?')format('ttf');
+    /*IE*/
+}
+
 .banner {
-    .b-content {
-        width: 1200px;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
-        .bc-left {
-            width: 600px;
-            height: 100%;
-            display: flex;
-            flex-flow: column;
-            justify-content: center;
-            .bcl-title {
-                font-size: 38px;
-                color: black;
-                text-align: center;
-                font-weight: bold;
-                span {
-                    color: white;
-                    font-size: 64px;
-                }
-            }
-            .consulting {
-                display: block;
-                text-decoration: none;
-                font-size: 21px;
-                color: black;
-                padding: 10px 0px;
-                width: 235px;
-                text-align: center;
-                background: white;
-                margin: 0 auto;
-                margin-top: 40px;
-            }
-        }
-        .bc-right {
-            flex: 1;
-            display: flex;
-            flex-flow: row;
-            justify-content: center;
-            .bcr-direction {
-                width: 45px;
-                height: 100%;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                cursor: pointer;
-                i {
-                    width: 45px;
-                    height: 45px;
-                    background: url(../img/banner-direction.png)no-repeat;
-                    background-size: auto 45px;
-                    background-position: 0 0;
-                }
-            }
-            .bcrd-right {
-                i {
-                    width: 45px;
-                    height: 45px;
-                    background: url(../img/banner-direction.png)no-repeat;
-                    background-size: auto 45px;
-                    background-position: -45px 0;
-                }
-            }
-            .brc-img {
-                width: 350px;
-                height: 100%;
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                position: relative;
-                p {
-                    font-size: 25px;
-                    width: 30px;
-                    line-height: 40px;
-                    position: absolute;
-                    top: 120px;
-                    left: 25px;
-                    color: black;
-                    font-weight: bold;
-                }
-                img {
-                    width: 310px;
-                    height: auto;
-                    border: 10px solid white;
-                    margin: 0 auto;
-                }
-            }
+    width: 100%;
+    height: auto !important;
+    font-size: 0;
+    background: none !important;
+    position: relative;
+    
+    .carousel-indicators {
+        li {
+            margin: 0 5px;
         }
     }
 }
@@ -769,21 +695,21 @@ section {
                         }
                     }
                 }
-                .sat-right{
-                    .satr-item{
-                        p{
+                .sat-right {
+                    .satr-item {
+                        p {
                             font-size: 20px;
                         }
                     }
                 }
             }
-            .sa-center{
-                h3{
+            .sa-center {
+                h3 {
                     font-size: 30px;
                 }
-                .sa-option{
-                    .sao-item{
-                        div p{
+                .sa-option {
+                    .sao-item {
+                        div p {
                             font-size: 20px !important;
                         }
                     }
@@ -792,16 +718,17 @@ section {
         }
         //部分师资力量
         .s-strength {
-            .ss-title, .ss-english{
+            .ss-title,
+            .ss-english {
                 font-size: 30px;
             }
             .ss-pardon {
                 width: 90%;
                 flex-wrap: wrap;
                 justify-content: flex-start;
-                li{
+                li {
                     margin: 20px 3%;
-                    .ssp-text p{
+                    .ssp-text p {
                         font-size: 20px;
                     }
                 }
@@ -809,13 +736,14 @@ section {
         }
         //合作院校
         .s-partner {
-            .spa-title,.spa-english{
+            .spa-title,
+            .spa-english {
                 font-size: 30px;
             }
             .spa-pardon {
                 width: 98%;
-                .spap-item{
-                    p{
+                .spap-item {
+                    p {
                         font-size: 20;
                     }
                 }

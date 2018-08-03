@@ -1,3 +1,28 @@
+.banner {
+  height: 400px !important;
+  background: url(../img/banner.png) no-repeat;
+  background-size: 100% auto !important;
+  margin-top: 1px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+.banner .title {
+  width: 450px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.banner .title2 {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  padding: 10px 0;
+  width: 160px;
+  background: white;
+  margin: 0 auto;
+  cursor: pointer;
+}
 section {
   width: 100%;
   height: auto;

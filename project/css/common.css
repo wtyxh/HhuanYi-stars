@@ -27,7 +27,7 @@ header nav .nav-logo img {
   height: auto;
   margin: 0 auto;
   position: relative;
-  top: -1px;
+  top: 14px;
   left: -1px;
 }
 header nav .nav-content {
@@ -41,6 +41,7 @@ header nav .nav-content ul {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
+  margin-bottom: 0;
 }
 header nav .nav-content ul li {
   list-style: none;
@@ -110,17 +111,19 @@ footer .footer .f-content .fc-center {
   height: auto;
   text-align: center;
 }
-footer .footer .f-content .fc-center p {
-  color: rgba(255, 255, 255, 0.5);
-  margin: 10px 0;
-  text-align: left;
-  text-indent: 30px;
-}
 footer .footer .f-content .fc-center p:first-child {
   font-size: 18px;
   margin-bottom: 17px;
   margin-top: 0;
   color: white;
+}
+footer .footer .f-content .fc-center a {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 10px 0;
+  text-align: left;
+  text-indent: 30px;
+  display: block;
+  text-decoration: none;
 }
 footer .footer .f-content .fc-right {
   flex: 1;
@@ -129,10 +132,10 @@ footer .footer .f-content .fc-right {
   font-size: 0;
   display: flex;
   flex-flow: row;
-  justify-content: center;
+  justify-content: flex-end;
 }
 footer .footer .f-content .fc-right .fcr-pardon {
-  width: 260px;
+  width: 400px;
   height: auto;
 }
 footer .footer .f-content .fc-right .fcr-pardon p {
@@ -245,7 +248,19 @@ footer .copyright p {
     font-size: 25px;
   }
   footer .footer .f-content .fc-right .fcr-pardon {
-    width: 290px;
+    width: 400px;
+    margin-right: 20px;
+  }
+  footer .footer .f-content .fc-right .fcr-pardon .fcr-item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+  footer .footer .f-content .fc-right .fcr-pardon .fcr-item p {
+    width: 370px;
+    text-indent: 0;
   }
   footer .footer .f-content .fc-right .fcr-pardon p:first-child {
     font-size: 25px;

@@ -1,91 +1,18 @@
-.banner .b-content {
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
+@font-face {
+  font-family: 'sb';
+  src: url('../font/全新硬笔楷书简.ttf?') format('ttf');
+  
+  /*IE*/
 }
-.banner .b-content .bc-left {
-  width: 600px;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-}
-.banner .b-content .bc-left .bcl-title {
-  font-size: 38px;
-  color: black;
-  text-align: center;
-  font-weight: bold;
-}
-.banner .b-content .bc-left .bcl-title span {
-  color: white;
-  font-size: 64px;
-}
-.banner .b-content .bc-left .consulting {
-  display: block;
-  text-decoration: none;
-  font-size: 21px;
-  color: black;
-  padding: 10px 0px;
-  width: 235px;
-  text-align: center;
-  background: white;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-.banner .b-content .bc-right {
-  flex: 1;
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-}
-.banner .b-content .bc-right .bcr-direction {
-  width: 45px;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  cursor: pointer;
-}
-.banner .b-content .bc-right .bcr-direction i {
-  width: 45px;
-  height: 45px;
-  background: url(../img/banner-direction.png) no-repeat;
-  background-size: auto 45px;
-  background-position: 0 0;
-}
-.banner .b-content .bc-right .bcrd-right i {
-  width: 45px;
-  height: 45px;
-  background: url(../img/banner-direction.png) no-repeat;
-  background-size: auto 45px;
-  background-position: -45px 0;
-}
-.banner .b-content .bc-right .brc-img {
-  width: 350px;
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+.banner {
+  width: 100%;
+  height: auto !important;
+  font-size: 0;
+  background: none !important;
   position: relative;
 }
-.banner .b-content .bc-right .brc-img p {
-  font-size: 25px;
-  width: 30px;
-  line-height: 40px;
-  position: absolute;
-  top: 120px;
-  left: 25px;
-  color: black;
-  font-weight: bold;
-}
-.banner .b-content .bc-right .brc-img img {
-  width: 310px;
-  height: auto;
-  border: 10px solid white;
-  margin: 0 auto;
+.banner .carousel-indicators li {
+  margin: 0 5px;
 }
 section {
   width: 100%;

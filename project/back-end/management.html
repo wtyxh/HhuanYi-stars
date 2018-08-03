@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>寰艺之星</title>
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/management.css" />
+	</head>
+
+	<body>
+		<div class="background"></div>
+		<header>
+			<div class="user"></div>
+		</header>
+		<section>
+			<div class="add"><button type="button" data-toggle="modal" data-target="#addModals" class="btn btn-primary">新增</button></div>
+			<div class="s-table">
+				<table class="table table-hover">
+					<thead>
+						<tr>
+							<th>序号</th>
+							<th>姓名</th>
+							<th>描述</th>
+							<th>图片名</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+			<!--新增信息框-->
+			<div class="modal fade" id="addModals" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改信息</h4>
+						</div>
+						<div class="modal-body changeMessage">
+							<form id="addForm" enctype="multipart/form-data" method="post" onsubmit="return false">
+								<p>请选择图片：</p>
+								<input type="file" name="fileImg" id="" value="" />
+								<p>请输入姓名：</p>
+								<input name="txtTeacherName" type="text" value="" />
+								<p>请输入描述：</p>
+								<textarea name="txtContent" rows="" cols=""></textarea>
+								<div style="margin: 10px 0;white-space: nowrap;">
+									<span>是否置顶？</span>
+									<span>是<input type="radio" name="txtSort" value="1" /></span>
+									<span0>否<input type="radio" name="txtSort" value="0" checked="checked" /></span>
+								</div>
+								<button type="submit" onclick="submitadd();" class="btn btn-primary">提交</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!-- 查看信息框 -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">查看信息</h4>
+						</div>
+						<div class="modal-body viewMessage">
+
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!-- 修改信息框 -->
+			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改信息</h4>
+						</div>
+						<div class="modal-body changeMessage">
+							<form id="changeForm" enctype="multipart/form-data" method="post" onsubmit="return false">
+
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!--删除-->
+			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改信息</h4>
+						</div>
+						<div class="modal-body deleteMessage">
+							<p>确认删除？</p>
+						</div>
+						<div class="modal-footer delete-footer">
+
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+			<!--弹出信息框-->
+			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">修改信息</h4>
+						</div>
+						<div class="modal-body tishi">
+							<p></p>
+						</div>
+						<div class="modal-footer mf-footer">
+							<!--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
+						</div>
+					</div>
+					<!-- /.modal-content -->
+				</div>
+				<!-- /.modal -->
+			</div>
+		</section>
+		<script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/url.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//获取地址栏账号密码
+			function GetQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) return unescape(r[2]);
+				return null;
+			}
+			var loginUsername = GetQueryString('username'),
+				loginPassword = GetQueryString('password')
+			//账号验证
+			function login() {
+				$.ajax({
+					type: "post",
+					url: url + "/api/User/UserLogin",
+					async: true,
+					data: {
+						name: loginUsername,
+						PassWord: loginPassword,
+					},
+					success: function(res) {
+						console.log(res);
+						if(res !== '1') {
+							window.location.href = "login.html"
+						} else {
+							addMessage(); //加载
+						}
+					},
+					error: function(err) {
+
+					}
+				});
+			}
+			login();
+
+			var v_arr = ['active', 'success', 'warning', 'danger', 'info'];
+			var a = 0;
+			var allData = ''
+			//加载信息
+			function addMessage() {
+				$.ajax({
+					type: "post",
+					url: url + "/api/Img/GetImgs",
+					async: true,
+					data: {},
+					success: function(res) {
+						allData = JSON.parse(res);
+						addTable();
+						console.log(allData)
+					},
+					error: function(err) {
+						console.log(err)
+						alert('无法接收数据')
+					}
+				});
+			}
+
+			//加载表格数据
+			function addTable() {
+				$('tbody').empty()
+				for(var i = 0; i < allData.length; i++) {
+					active_class = 'class=' + v_arr[a]
+					a += 1;
+					a > 4 ? a = 0 : a = a;
+					var v_str = '<tr ' + active_class + '  >' +
+						'<td>' + i+1 + '</td>' +
+						'<td>' + allData[i].TeacherName + '</td>' +
+						'<td>' + allData[i].ManDescribe + '</td>' +
+						'<td>' + allData[i].ImgName + '</td>' +
+						'<td>' +
+						'<button type="button" onclick="viewMessage(' + i + ');" class="btn btn-success">查看</button>' +
+						'<button type="button" onclick="changeMessage(' + i + ');" class="btn btn-primary">修改</button>' +
+						'<button type="button" onclick="deleteMessage(' + i + ');" class="btn btn-danger">删除</button>' +
+						'</td>' +
+						'</tr>'
+					$('tbody').append(v_str)
+				}
+			}
+
+			//查看所选内容
+			function viewMessage(label) {
+				$('.viewMessage').empty();
+				var m_str = '<div class="v-pardon">' +
+					'<div class="vp-img">' +
+					'<img src="' + allData[label].ImgShowPath + '"/>' +
+					'</div>' +
+					'<div class="v-text">' +
+					'<p>' + allData[label].ManDescribe + '</p>' +
+					'</div>' +
+					'</div>'
+				$('.viewMessage').append(m_str)
+				$('#myModal').modal({
+					keyboard: false,
+					show: true
+				});
+			}
+
+			//修改所选内容
+			function changeMessage(label) {
+
+				var cm_str = '<p>请选择图片：</p>' +
+					'<input type="file" name="fileImg" value="" />' +
+					'<p>请输入姓名：</p>' +
+					'<input name="txtTeacherName" type="text" value="" />'+
+					'<p>请输入描述：</p>' +
+					'<textarea name="txtContent" id="changeFormtext">' + allData[label].ManDescribe + '</textarea>' +
+					'<input type="text" name="hdnID" hidden="hidden" value="' + allData[label].ID + '" />' +
+					'<div style="margin: 10px 0;white-space: nowrap;">' +
+					'<span>是否置顶？</span>' +
+					'<span>是<input type="radio" name="txtSort" value="1" /></span>' +
+					'<span0>否<input type="radio" name="txtSort" value="0" checked="checked" /></span>' +
+					'</div>' +
+					'<button type="submit" onclick="submitChange();" class="btn btn-primary">确认修改</button>';
+				$('#changeForm').empty();
+				$('#changeForm').append(cm_str);
+				$('#myModal2').modal({
+					keyboard: false,
+					show: true
+				});
+			}
+
+			//提交修改信息
+			function submitChange() {
+				var formData = new FormData($('#changeForm')[0])
+				$.ajax({
+					type: "post",
+					url: url + "/api/Img/Update",
+					async: true,
+					dataType: 'json',
+					contentType: false,
+					processData: false,
+					data: formData,
+					success: function(res) {
+						if(res == '0') {
+							$('.tishi p').text('修改失败！');
+							$('.mf-footer').empty();
+							$('.mf-footer').append('<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>')
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+						} else {
+							closeAll();
+							$('.tishi p').text('修改成功！');
+							$('.mf-footer').empty();
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+
+						}
+					},
+					error: function(err) {
+
+					}
+				});
+			}
+			//关闭所有模态框
+			function closeAll() {
+				$('#myModal').modal('hide');
+				$('#myModal2').modal('hide');
+				$('#myModal3').modal('hide');
+				$('#myModa14').modal('hide');
+				$('#addModals').modal('hide');
+				addMessage();
+			}
+			//删除所选内容
+			function deleteMessage(label) {
+				$('.delete-footer').empty();
+				$('.delete-footer').prepend('<button type="button" onclick="yesDelete(' + label + ')" class="btn btn-primary">确认删除</button>')
+				$('#myModal3').modal({
+					keyboard: false,
+					show: true
+				});
+			}
+			//确认删除
+			function yesDelete(label) {
+				var id = allData[label].ID
+				$.ajax({
+					type: "post",
+					url: url + "/api/Img/Delete/" + id,
+					async: true,
+					data: {},
+					success: function(res) {
+						console.log(res)
+						if(res == '0') {
+							$('.tishi p').text('删除失败！');
+							$('.mf-footer').empty();
+							$('.mf-footer').append('<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>')
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+						} else {
+							$('.tishi p').text('删除成功！');
+							$('.mf-footer').empty();
+							closeAll();
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+
+						}
+					},
+					error: function(err) {
+						console.log(err)
+					}
+				});
+			}
+			//新增信息
+			function submitadd() {
+				var formData = new FormData($('#addForm')[0]);
+				console.log(formData)
+				$.ajax({
+					type: "post",
+					url: url + "/api/Img/Add",
+					async: false,
+					dataType: 'json',
+					contentType: false,
+					processData: false,
+					data: formData,
+					success: function(res) {
+						console.log(res)
+						if(res == '0') {
+							$('.tishi p').text('新增失败！');
+							$('.mf-footer').empty();
+							$('.mf-footer').append('<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>')
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+						} else {
+							closeAll();
+							$('.tishi p').text('新增成功！');
+							$('.mf-footer').empty();
+							$('#myModal4').modal({
+								keyboard: false,
+								show: true
+							});
+
+						}
+					},
+					error: function(err) {
+
+					}
+				});
+			}
+		</script>
+	</body>
+
+</html>

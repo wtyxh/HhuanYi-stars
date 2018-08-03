@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>寰艺之星</title>
+		<link rel="stylesheet" type="text/css" href="project/back-end/vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" type="text/css" href="project/css/common.css" />
-		<link rel="stylesheet" type="text/css" href="project/css/index.css" />
+		<link rel="stylesheet" charset="utf-8" type="text/css" href="project/css/index.css" />
 	</head>
 
 	<body>
@@ -38,28 +39,31 @@
 				</div>
 			</nav>
 			<div class="banner">
-				<div class="b-content">
-					<div class="bc-left">
-						<p class="bcl-title">韩国首尔艺术大学<span>知名校友</span></p>
-						<a class="consulting" href="javascript:void(0);">咨询韩国艺术学院</a>
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="project/img/banner1.png" alt="First slide">
+						</div>
+						<div class="item">
+							<img src="project/img/banner2.png" alt="Second slide">
+						</div>
+						<div class="item">
+							<img src="project/img/banner3.png" alt="Third slide">
+						</div>
 					</div>
-					<div class="bc-right">
-						<div class="bcr-direction">
-							<i></i>
-						</div>
-						<div class="brc-img">
-							<p>车太贤</p>
-							<img src="project/img/banner-img.png" alt="" title="" />
-						</div>
-						<div class="bcr-direction bcrd-right">
-							<i></i>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</header>
 		<section>
-			<p class="s-title">中韩合作艺术人才培训计划</p>
+			<p class="s-title">中韩合作艺术人才培养计划</p>
 			<!--机构简介-->
 			<div class="s-enterprise">
 				<div class="se-title">
@@ -68,8 +72,8 @@
 				</div>
 				<div class="se-content">
 					<div class="sec-left">
-						<a href="">更多详情》</a>
-						<p class="secl-text">重庆寰艺之星艺术培训机构是一家主营现代流行艺术人才培养的培训机构，拥有一流的硬件教学设备与强大的艺术导师团队，现教学场地1300余平方，中韩两国优秀艺术专业导师20余人，寰艺之星秉承“艺术改变人生”的理念，积极探索“校企合作、产教融合、工学结合“艺术人才培养新模式，开展的‘中韩’1111111111</p>
+						<a href="project/gywm.html">更多详情》</a>
+						<p class="secl-text">重庆寰艺之星艺术培养机构是一家主营现代流行艺术人才培养的培养机构，拥有一流的硬件教学设备与强大的艺术导师团队，现教学场地1300余平方，中韩两国优秀艺术专业导师20余人，寰艺之星秉承“艺术改变人生”的理念，积极探索“校企合作、产教融合、工学结合“艺术人才培养新模式，开展的‘中韩’1111111111</p>
 						<div class="sec-img">
 							<img src="project/img/index/sec-img1.png" alt="首尔艺术大学" title="首尔艺术大学" />
 							<img src="project/img/index/sec-img2.png" alt="秋溪艺术大学" title="秋溪艺术大学" />
@@ -88,16 +92,16 @@
 					<p>Strategic partners</p>
 				</div>
 				<div class="ss-img">
-					<div class="ssi-item">
+					<div class="ssi-item" onclick="window.open('http://news.cctv.com/2018/04/17/VIDEDpAL8Im9Hi4DtElwETVp180417.shtml')">
 						<div class="ssii-img">
 							<div class="ssii-bounced">
 								<p>新闻发布会央视报道</p>
 							</div>
 							<img src="project/img/index/ssii-img1.png" alt="新闻发布会央视报道" title="新闻发布会央视报道" />
 						</div>
-						<p class="ssii-text">"中韩合作艺术人才培训计划"新闻发布会</p>
+						<p class="ssii-text">"中韩合作艺术人才培养计划"新闻发布会</p>
 					</div>
-					<div class="ssi-item">
+					<div class="ssi-item" onclick="window.open('http://cq.sina.com.cn/city/csts/2018-04-15/city-ifzcyxmv0772992.shtml')">
 						<div class="ssii-img">
 							<div class="ssii-bounced">
 								<p>首尔艺术代表还具荣校长</p>
@@ -106,7 +110,7 @@
 						</div>
 						<p class="ssii-text">首尔艺术代表还具荣校长</p>
 					</div>
-					<div class="ssi-item">
+					<div class="ssi-item" onclick="window.open('https://www.sohu.com/a/228318128_110733')">
 						<div class="ssii-img">
 							<div class="ssii-bounced">
 								<p>秋溪艺术大学代表郑企喆教授</p>
@@ -127,7 +131,7 @@
 					</div>
 				</div>
 				<div class="ss-bottomT">
-					<a href="">更多详情》</a>
+					<a href="project/gywm.html">更多详情》</a>
 					<p class="ss-text">重庆重视传媒有限责任公司成立余2001年11月8日，是集团电视产业化的桥梁和载体，是重庆广播电视集团（总台）主体内容企业。重视传媒公司以经营集团（总台）CQTV-时尚频道、CQTV-生活频道、CQTV-时尚购物频道为平台，主营电视栏目、栏目剧和电视剧此话、制作、销售、业务范围实际广告代理、商演开发、大型活动承办、电视购物、商品贸易111111111111111111111</p>
 				</div>
 			</div>
@@ -136,7 +140,7 @@
 				<p class="sp-title">专业介绍</p>
 				<p class="sp-english">Professional Introduction</p>
 				<div class="sp-content">
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-1.png" alt="实用音乐" title="实用音乐" />
 						</div>
@@ -144,7 +148,7 @@
 							<span>实用音乐</span>
 						</div>
 					</div>
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-2.png" alt="影视传媒" title="影视传媒" />
 						</div>
@@ -152,7 +156,7 @@
 							<span>影视传媒</span>
 						</div>
 					</div>
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-3.png" alt="形象设计" title="形象设计" />
 						</div>
@@ -160,7 +164,7 @@
 							<span>形象设计</span>
 						</div>
 					</div>
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-4.png" alt="模特" title="模特" />
 						</div>
@@ -168,7 +172,7 @@
 							<span>模特</span>
 						</div>
 					</div>
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-5.png" alt="美术设计" title="美术设计" />
 						</div>
@@ -176,7 +180,7 @@
 							<span>美术设计</span>
 						</div>
 					</div>
-					<div class="spc-item">
+					<div class="spc-item" onclick="window.location.href='project/kcjs.html'">
 						<div class="spci-img">
 							<img src="project/img/index/spcii-6.png" alt="舞蹈" title="舞蹈" />
 						</div>
@@ -191,7 +195,7 @@
 				<div class="sa-top">
 					<div class="sat-left">
 						<p class="satl-h1">招生对象</p>
-						<p class="satl-h2">培训对象及入学条件</p>
+						<p class="satl-h2">培养对象及入学条件</p>
 						<ul>
 							<li>就读于国内高中或中职院校的应届毕业生或在读学生</li>
 							<li>有现代流行文化艺术专业学习意愿的青少年</li>
@@ -206,7 +210,7 @@
 						</div>
 						<i></i>
 						<div class="satr-item">
-							<p>参加专业培训 通过最终审核</p>
+							<p>参加专业培养 通过最终审核</p>
 						</div>
 						<i></i>
 						<div class="satr-item">
@@ -234,7 +238,7 @@
 								<p>集训强化班</p>
 							</div>
 							<div class="saoi-big">
-								<p>为期10个月的高强度专业培训</p>
+								<p>为期10个月的高强度专业培养</p>
 							</div>
 							<div class="saoi-small">
 								<p>59800元</p>
@@ -246,7 +250,7 @@
 								<p>寒暑假周末集训班</p>
 							</div>
 							<div class="saoi-big">
-								<p>为期一学年周末或者寒暑假的高强度专业培训</p>
+								<p>为期一学年周末或者寒暑假的高强度专业培养</p>
 							</div>
 							<div class="saoi-small">
 								<p>29900元</p>
@@ -258,7 +262,7 @@
 								<p>集训强化班</p>
 							</div>
 							<div class="saoi-big">
-								<p>为期5个月的高强度专业培训</p>
+								<p>为期5个月的高强度专业培养</p>
 							</div>
 							<div class="saoi-small">
 								<p>59800元</p>
@@ -270,7 +274,7 @@
 								<p>寒暑假周末集训班</p>
 							</div>
 							<div class="saoi-big">
-								<p>为期一学年周末或者寒暑假的高强度专业培训</p>
+								<p>为期一学年周末或者寒暑假的高强度专业培养</p>
 							</div>
 							<div class="saoi-small">
 								<p>29900元</p>
@@ -286,7 +290,7 @@
 				<ul class="ss-pardon">
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-1.png"/>
+							<img src="project/img/index/sspi-1.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -295,7 +299,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-2.png"/>
+							<img src="project/img/index/sspi-2.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -304,7 +308,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-3.png"/>
+							<img src="project/img/index/sspi-3.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -313,7 +317,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-4.png"/>
+							<img src="project/img/index/sspi-4.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -322,7 +326,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-5.png"/>
+							<img src="project/img/index/sspi-5.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -331,7 +335,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-6.png"/>
+							<img src="project/img/index/sspi-6.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -340,7 +344,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-7.png"/>
+							<img src="project/img/index/sspi-7.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -349,7 +353,7 @@
 					</li>
 					<li>
 						<div class="ssp-img">
-							<img src="project/img/index/sspi-8.png"/>
+							<img src="project/img/index/sspi-8.png" />
 						</div>
 						<div class="ssp-text">
 							<p>特约教授choi dae sung</p>
@@ -365,19 +369,19 @@
 				<div class="spa-pardon">
 					<div class="spap-item">
 						<div class="spapi-img">
-							<img src="project/img/index/首页_03.png"/>
+							<img src="project/img/index/首页_03.png" />
 						</div>
 						<p>重视传媒基地</p>
 					</div>
 					<div class="spap-item">
 						<div class="spapi-img">
-							<img src="project/img/index/首页_05.png"/>
+							<img src="project/img/index/首页_05.png" />
 						</div>
 						<p>首尔艺术大学</p>
 					</div>
 					<div class="spap-item">
 						<div class="spapi-img">
-							<img src="project/img/index/首页_07.png"/>
+							<img src="project/img/index/首页_07.png" />
 						</div>
 						<p>秋溪艺术大学</p>
 					</div>
@@ -393,31 +397,31 @@
 					</dic>
 					<div class="fc-center">
 						<p>友情链接</p>
-						<p>首尔艺术大学</p>
-						<p>秋溪艺术大学</p>
+						<a href="http://www.seoularts.ac.kr/mbs/kr/index.jsp">首尔艺术大学</a>
+						<a href="https://www.chugye.ac.kr/mbs/university/">秋溪艺术大学</a>
 					</div>
 					<div class="fc-right">
 						<div class="fcr-pardon">
 							<p>咨询热线</p>
 							<div class="fcr-item">
 								<i class="ficr1"></i>
-								<p>座机 ：000000</p>
+								<p>座机 ：023-86092217</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci2"></i>
-								<p>手机 ：00000000</p>
+								<p>手机 ：17723157197</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci3"></i>
-								<p>联系人 ：经理</p>
+								<p>联系人 ：侯经理</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci4"></i>
-								<p>电子邮箱 ：haiyi@QQ.com</p>
+								<p>电子邮箱 ：180777829@qq.com</p>
 							</div>
 							<div class="fcr-item">
 								<i class="frci5"></i>
-								<p>联系地址 ：xxxxxxxxxxx</p>
+								<p>联系地址 ：重庆市渝北区重庆创意公园13栋4单元3F</p>
 							</div>
 						</div>
 					</div>
@@ -425,9 +429,42 @@
 			</div>
 			<!--版权-->
 			<div class="copyright">
-				<p>重庆寰艺之星有限公司 ©HY1688.COM 版权所有 备案号 ：123465</p>
+				<p>重庆雄亚寰艺文化传媒有限公司 ©2017 Hi-Star.com.cn 版权所有 渝ICP备18000358号-1</p>
 			</div>
 		</footer>
+		<script src="project/vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="project/back-end/vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="project/back-end/js/url.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$.ajax({
+				type: "post",
+				url: "/api/Img/GetImgs",
+				async: true,
+				data: {},
+				success: function(res) {
+					var data = JSON.parse(res);
+					console.log(data)
+					$('.ss-pardon').empty();
+					for(var i = 0; i < 8; i++) {
+						var ccc = '';
+						i <= 3 ? ccc = "<p>寰艺之星结业考核考官</p>" : '';
+						var v_str = '<li><div class="ssp-img"><img src="' + data[i].ImgShowPath + '"/></div>' +
+							'<div class="ssp-text">' +
+							'<p>' + data[i].TeacherName + '</p>' + ccc
+
+						'</div></li>'
+						$('.ss-pardon').append(v_str);
+					}
+				},
+				error: function(err) {
+					console.log(err)
+				}
+			});
+			//图片轮播
+			$('.carousel').carousel({
+				interval:5000
+			})
+		</script>
 	</body>
 
 </html>
